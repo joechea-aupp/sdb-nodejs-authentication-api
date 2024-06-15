@@ -6,6 +6,6 @@ export default async (req, res) => {
     await signUpAdmin({ name, email, password });
     res.redirect("/admin/login");
   } catch (error) {
-    res.direct("/admin/signup");
+    res.redirect("/admin/signup");
   }
 };
